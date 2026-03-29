@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Playlist Spotify</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #181818; color: #fff; font-family: 'Circular Spotify Tx T Black', -apple-system, sans-serif; overflow: hidden; }
+    .player-container { height: 100vh; display: flex; flex-direction: column; max-width: 100%; margin: 0 auto; }
+    .header { background: linear-gradient(135deg, #1db954, #1ed760); padding: 30px; text-align: center; }
+    .header h1 { font-size: 32px; font-weight: 900; margin-bottom: 10px; }
+    .header p { font-size: 16px; opacity: 0.9; }
+    .spotify-embed { flex: 1; width: 100%; border: none; border-radius: 0 0 12px 12px; }
+    .footer { padding: 20px; text-align: center; background: #181818; }
+    .footer p { color: #b3b3b3; font-size: 14px; }
+    @media (max-width: 768px) { .header h1 { font-size: 24px; } }
+  </style>
+</head>
+<body>
+  <div class="player-container">
+    <div class="header">
+      <h1>🎵 Minha Playlist</h1>
+      <p>Reproduzida via Spotify oficial — controles completos</p>
+    </div>
+    <!-- EMBED OFICIAL DA SUA PLAYLIST -- Sua playlist carrega aqui! -->
+    <iframe class="spotify-embed" src="https://open.spotify.com/embed/playlist/3mU52pg0XwIVedVbnSAC7f?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <div class="footer">
+      <p>Playlist privada • Funciona offline no app Spotify • Sem anúncios extras</p>
+    </div>
+  </div>
+</body>
+</html>
